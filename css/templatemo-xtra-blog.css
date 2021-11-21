@@ -85,6 +85,9 @@ hr {
 
 #id-home {
     background-image: url(../img/background-marble.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -94,6 +97,13 @@ hr {
     padding: 50px;
     margin: auto;
     width: max-content;
+    text-align: center;
+}
+
+.eg-brand-img {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .tm-main {
