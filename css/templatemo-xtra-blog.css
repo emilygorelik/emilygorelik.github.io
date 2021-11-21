@@ -84,7 +84,7 @@ hr {
 .tm-site-logo i { color: var(--my-teal); }
 
 #id-home {
-    background-image: url(img/background-marble.png);
+    background-image: url(../img/background-marble.png);
     height: 100vh;
 }
 
