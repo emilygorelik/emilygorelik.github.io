@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xtra Blog</title>
+    <title>Emily Gorelik version 2</title>
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- https://fonts.google.com/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+    <link rel="icon" href="img/brand-alt.png">
     <!--
     
 TemplateMo 553 Xtra Blog
@@ -31,7 +32,12 @@ https://templatemo.com/tm-553-xtra-blog
             </div>
             <nav class="tm-nav" id="tm-nav">
                 <ul>
-                    <li id="id-menu-index" class="eg-menu-option tm-nav-item active">
+                    <li id="id-menu-home" class="eg-menu-option tm-nav-item active">
+                        <a onclick="showDiv('id-home'); showSelected('id-menu-home');" class="tm-nav-link">
+                            <i class="fas fa-home"></i>Main Page
+                        </a>
+                    </li>
+                    <li id="id-menu-index" class="eg-menu-option tm-nav-item">
                         <a onclick="showDiv('id-index'); showSelected('id-menu-index');" class="tm-nav-link">
                             <i class="fas fa-home"></i>Blog Home
                         </a>
@@ -73,7 +79,21 @@ https://templatemo.com/tm-553-xtra-blog
             </p>
         </div>
     </header>
-    <div id="id-index" class="container-fluid eg-page">
+    <div id="id-home" class="container-fluid eg-page">
+        <main class="tm-main">
+            <div style="display: flex; height: 100vh;">
+                <div id="eg-brand-box">
+                    <img class="eg-brand-img" src="img/brand.png">
+                    <h2>
+                        Emily Gorelik
+                        <br><br>
+                        Developer | Designer
+                    </h2>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="id-index" class="container-fluid eg-page" style="display: none;">
         <main class="tm-main">
             <!-- Search form -->
             <div class="row tm-row">
@@ -713,7 +733,7 @@ https://templatemo.com/tm-553-xtra-blog
             for (i = 0; i < all.length; i++) {
                 all[i].style.display = "none";
             }
-            active.style.display = "block"; 
+            active.style.display = "block";
         }
 
         function showSelected(id) {

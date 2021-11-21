@@ -12,6 +12,7 @@ https://templatemo.com/tm-553-xtra-blog
     --my-teal:      #4898A6;
     --my-gold:      #DCBC7F;
     --my-off-white: #F5F7F3;
+    --my-off-white-transparent: #F5F7F3EF;
 }
 
 html { overflow-x: hidden; }
@@ -82,9 +83,37 @@ hr {
 
 .tm-site-logo i { color: var(--my-teal); }
 
+#id-home {
+    background-image: url(../img/background-marble.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#eg-brand-box{
+    background-color: var(--my-off-white-transparent); /*top page text box background*/
+    border: 1px solid var(--my-gray); /*top page text box border*/
+    padding: 50px;
+    margin: auto;
+    width: max-content;
+    text-align: center;
+}
+
+.eg-brand-img {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--my-navy);
+}
+
 .tm-main {
     margin-left: 400px;
-    padding: 80px 100px 25px;
+    padding: 0 100px;
 }
 
 .tm-post { max-width: 470px; }
