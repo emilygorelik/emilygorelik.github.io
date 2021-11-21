@@ -713,7 +713,7 @@ https://templatemo.com/tm-553-xtra-blog
             for (i = 0; i < all.length; i++) {
                 all[i].style.display = "none";
             }
-            active.style.display = "block";
+            active.style.display = "block"; 
         }
 
         function showSelected(id) {
@@ -723,7 +723,8 @@ https://templatemo.com/tm-553-xtra-blog
                 all[i].classList.remove("active");
             }
             active.classList.add("active");
-            
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>
