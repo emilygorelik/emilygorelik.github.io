@@ -536,7 +536,7 @@ a:hover figcaption { color: var(--my-gold); }
 
     .tm-main {
         margin-left: 0;
-        padding: 50px 40px;
+        /* padding: 50px 40px; */
         width: 100%;
     }
 
@@ -569,7 +569,7 @@ a:hover figcaption { color: var(--my-gold); }
     }
 
     .tm-search-form { justify-content: flex-start; }
-    .tm-main { padding: 60px 10px; }
+    .tm-main { padding: 0; }
 
     .tm-prev-next-wrapper,
     .tm-paging-wrapper {
@@ -638,6 +638,14 @@ a:hover figcaption { color: var(--my-gold); }
 }
 
 @media (max-width: 480px) {
+    .eg-brand-img {
+        width: 50vw;
+    }
+    
+    h2 {
+        font-size: large;
+    }
+
     .tm-person-col { width: 100%; }
     .tm-person { flex-direction: row; }
 }
