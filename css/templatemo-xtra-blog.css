@@ -108,7 +108,7 @@ hr {
 
 .tm-main {
     margin-left: 400px;
-    padding: 80px 100px 25px;
+    padding: 0 100px;
 }
 
 .tm-post { max-width: 470px; }
