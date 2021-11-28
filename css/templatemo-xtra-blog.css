@@ -74,11 +74,14 @@ hr {
 .tm-site-logo {
     width: 75px;
     height: 75px;
-    border-radius: 50%;
-    background-color: var(--my-gold);    
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.eg-brand-img-menu {
+    width: 150px;
+    margin-bottom: 20px;
 }
 
 .tm-site-logo i { color: var(--my-teal); }
