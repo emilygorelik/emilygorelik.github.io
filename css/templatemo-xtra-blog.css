@@ -92,6 +92,7 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    margin-top: 0;
 }
 
 #eg-brand-box{
@@ -107,6 +108,11 @@ hr {
     width: 200px;
     margin-bottom: 20px;
     padding: 10px;
+}
+
+.eg-page {
+    display: block;
+    margin-top: 5vh;
 }
 
 h2 {
