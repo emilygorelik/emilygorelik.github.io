@@ -123,38 +123,65 @@ hr {
 }
 
 /* About Me */
-#eg-intro-par {
+#eg-intro-par-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: blue;
 }
 
 #eg-profile {
     width: 80%;
+    max-width: 250px;
     height: fit-content; 
-    margin: auto;
     border: var(--my-navy) 1px solid;
     border-radius: 100%;
-    padding: 2%;
+    padding: 10px;
     margin: 0 auto 2vh;
 }
 
-@media (min-width: 767px) {
-    #eg-intro-par {
+@media (min-width: 630px) {
+    #eg-intro-par-wrapper {
         flex-direction: row;
-        background-color: red;
     }
     
     #eg-profile {
-        width: 25%; 
+        width: 20%; 
         min-width: 200px;
         max-width: 300px;
-        height: fit-content; 
         margin: auto;
-        border: var(--my-navy) 1px solid;
-        border-radius: 100%;
-        padding: 2%;
+    }
+
+    #eg-intro-par {
+        padding-left: 2vw;
+    }
+}
+
+@media (min-width: 992px) {
+    #eg-intro-par-wrapper {
+        flex-direction: column;
+    }
+    
+    #eg-profile {
+        width: 80%; 
+        margin: 0 auto 2vh;
+    }
+
+    #eg-intro-par {
+        padding-left: none;
+    }
+}
+
+@media (min-width: 1288px) {
+    #eg-intro-par-wrapper {
+        flex-direction: row;
+    }
+    
+    #eg-profile {
+        width: 20%; 
         margin: auto;
+    }
+
+    #eg-intro-par {
+        padding-left: 2vw;
     }
 }
 
