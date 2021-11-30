@@ -118,8 +118,12 @@ hr {
     margin-top: 5vh;
 }
 
-.eg-page-title {
+.eg-page-title{
     color: var(--my-navy);
+}
+
+.eg-page-heading {
+    text-align: left;
 }
 
 /* About Me */
