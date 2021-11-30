@@ -86,12 +86,14 @@ hr {
 
 .tm-site-logo i { color: var(--my-teal); }
 
+/* Home screen formatting */
 #id-home {
     background-image: url(../img/background-marble.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    margin-top: 0;
 }
 
 #eg-brand-box{
@@ -108,7 +110,86 @@ hr {
     margin-bottom: 20px;
     padding: 10px;
 }
+/* END Home screen formatting */
 
+/* Info pages formatting */
+.eg-page {
+    display: block;
+    margin-top: 5vh;
+}
+
+.eg-page-title{
+    color: var(--my-navy);
+}
+
+.eg-page-heading {
+    text-align: left;
+}
+
+/* About Me */
+#eg-intro-par-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#eg-profile {
+    width: 80%;
+    max-width: 250px;
+    height: fit-content; 
+    border: var(--my-navy) 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 0 auto 2vh;
+}
+
+@media (min-width: 630px) {
+    #eg-intro-par-wrapper {
+        flex-direction: row;
+    }
+    
+    #eg-profile {
+        width: 20%; 
+        min-width: 200px;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    #eg-intro-par {
+        padding-left: 2vw;
+    }
+}
+
+@media (min-width: 992px) {
+    #eg-intro-par-wrapper {
+        flex-direction: column;
+    }
+    
+    #eg-profile {
+        width: 80%; 
+        margin: 0 auto 2vh;
+    }
+
+    #eg-intro-par {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1288px) {
+    #eg-intro-par-wrapper {
+        flex-direction: row;
+    }
+    
+    #eg-profile {
+        width: 20%; 
+        margin: auto;
+    }
+
+    #eg-intro-par {
+        padding-left: 2vw;
+    }
+}
+
+/* Template Formatting */
 h2 {
     text-align: center;
     color: var(--my-navy);
