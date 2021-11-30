@@ -126,8 +126,8 @@ hr {
     text-align: left;
 }
 
-/* About Me */
-#eg-intro-par-wrapper {
+/* About Me -no sidebar vertical*/
+#eg-intro-par-wrapper { 
     display: flex;
     flex-direction: column;
 }
@@ -142,7 +142,7 @@ hr {
     margin: 0 auto 2vh;
 }
 
-@media (min-width: 630px) {
+@media (min-width: 630px) { /* no sidebar horizontal */
     #eg-intro-par-wrapper {
         flex-direction: row;
     }
@@ -159,7 +159,7 @@ hr {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) { /* sidebar vertical */
     #eg-intro-par-wrapper {
         flex-direction: column;
     }
@@ -174,7 +174,7 @@ hr {
     }
 }
 
-@media (min-width: 1288px) {
+@media (min-width: 1288px) { /* sidebar horizontal */
     #eg-intro-par-wrapper {
         flex-direction: row;
     }
