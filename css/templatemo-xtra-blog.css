@@ -86,6 +86,7 @@ hr {
 
 .tm-site-logo i { color: var(--my-teal); }
 
+/* Home screen formatting */
 #id-home {
     background-image: url(../img/background-marble.png);
     background-position: center;
@@ -109,12 +110,55 @@ hr {
     margin-bottom: 20px;
     padding: 10px;
 }
+/* END Home screen formatting */
 
+/* Info pages formatting */
 .eg-page {
     display: block;
     margin-top: 5vh;
 }
 
+.eg-page-title {
+    color: var(--my-navy);
+}
+
+/* About Me */
+#eg-intro-par {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+#eg-profile {
+    width: 80%;
+    height: fit-content; 
+    margin: auto;
+    border: var(--my-navy) 1px solid;
+    border-radius: 100%;
+    padding: 2%;
+    margin: 0 auto 2vh;
+}
+
+@media (min-width: 767px) {
+    #eg-intro-par {
+        flex-direction: row;
+        background-color: red;
+    }
+    
+    #eg-profile {
+        width: 25%; 
+        min-width: 200px;
+        max-width: 300px;
+        height: fit-content; 
+        margin: auto;
+        border: var(--my-navy) 1px solid;
+        border-radius: 100%;
+        padding: 2%;
+        margin: auto;
+    }
+}
+
+/* Template Formatting */
 h2 {
     text-align: center;
     color: var(--my-navy);
