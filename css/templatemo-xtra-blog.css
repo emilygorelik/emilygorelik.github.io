@@ -126,7 +126,7 @@ hr {
     text-align: left;
 }
 
-/* About Me -no sidebar vertical*/
+/* no sidebar vertical*/
 #eg-intro-par-wrapper, .eg-swp-project-wrapper, .eg-experience-wrapper { 
     display: flex;
     flex-direction: column;
@@ -151,7 +151,8 @@ hr {
     padding: 10px;
 }
 
-@media (min-width: 630px) { /* no sidebar horizontal */
+/* no sidebar horizontal */
+@media (min-width: 630px) { 
     #eg-intro-par-wrapper, .eg-swp-project-wrapper, .eg-experience-wrapper {
         flex-direction: row;
     }
@@ -160,15 +161,20 @@ hr {
         width: 20%; 
         min-width: 200px;
         max-width: 300px;
-        margin: auto;
+        margin: auto 0;
     }
 
     .eg-par {
         padding-left: 2vw;
     }
+
+    .eg-experience-image {
+        padding: 25px;
+    }
 }
 
-@media (min-width: 992px) { /* sidebar vertical */
+/* sidebar vertical */
+@media (min-width: 992px) { 
     #eg-intro-par-wrapper, .eg-swp-project-wrapper, .eg-experience-wrapper {
         flex-direction: column;
     }
@@ -183,18 +189,23 @@ hr {
     }
 }
 
-@media (min-width: 1288px) { /* sidebar horizontal */
+/* sidebar horizontal */
+@media (min-width: 1288px) { 
     #eg-intro-par-wrapper, .eg-swp-project-wrapper, .eg-experience-wrapper {
         flex-direction: row;
     }
     
     #eg-profile, .eg-swp-image, .eg-experience-image {
         width: 20%; 
-        margin: auto;
+        margin: auto 0;
     }
 
     .eg-par {
         padding-left: 2vw;
+    }
+
+    .eg-experience-image {
+        padding: 25px;
     }
 }
 
