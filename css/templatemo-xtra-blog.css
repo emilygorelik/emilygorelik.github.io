@@ -56,7 +56,7 @@ hr {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 30px;
+    padding-left: 30px;
     width: 100%;
     height: 100%; 
 }
@@ -68,7 +68,7 @@ hr {
 
 .tm-site-header {
     margin-top: 50px;
-    margin-bottom: 115px;
+    margin-left: -30px;
 }
 
 .tm-site-logo {
@@ -209,12 +209,21 @@ hr {
     }
 }
 
-/* Template Formatting */
 h2 {
     text-align: center;
     color: var(--my-navy);
 }
 
+.social-img{
+    height: 50px;
+}
+.eg-social-links{
+    margin-bottom: 65px;
+    text-align: center;
+    margin-left: -30px;
+}
+
+/* Template Formatting */
 .tm-main {
     margin-left: 400px;
     padding: 0 100px;
@@ -226,8 +235,6 @@ h2 {
     max-width: 980px;
     justify-content: space-between;
 }
-
-.tm-nav { margin-bottom: 100px; }
 
 .tm-nav-item {
     list-style: none;
@@ -524,7 +531,7 @@ a.tm-color-gray:hover { color:var(--my-gold); }
 .tm-bg-gray { background-color: var(--my-gray); }
 button:focus { outline: none; }
 
-a {
+a, #a-hobbies {
     text-decoration: none; 
     color: var(--my-teal);  
 }
@@ -621,7 +628,7 @@ a:hover figcaption { color: var(--my-gold); }
     }
 
     .tm-header.show { left: 0; }
-    .tm-header-wrapper { padding: 15px; }
+    .tm-header-wrapper { padding-left: 15px; }
 
     .navbar-toggler {
         display: block;

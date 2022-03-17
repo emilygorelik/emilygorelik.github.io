@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
     <link rel="icon" href="img/brand-alt.png">
+
     <!-- TemplateMo 553 Xtra Blog https://templatemo.com/tm-553-xtra-blog -->
 </head>
 
@@ -24,6 +25,14 @@
                     <img class="eg-brand-img-menu" src="img/brand-alt.png">
                 </div>
                 <h1 class="text-center">Emily Gorelik</h1>
+            </div>
+            <div class="eg-social-links">
+                <a href="https://www.linkedin.com/in/emily-gorelik/" target="_blank" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+                <a href="https://github.com/emgore1016" target="_blank" class="tm-social-link">
+                    <i class="fab fa-github tm-social-icon"></i>
+                </a>
             </div>
             <nav class="tm-nav" id="tm-nav">
                 <ul>
@@ -47,27 +56,13 @@
                             <i class="fas fa-briefcase"></i>Experience
                         </a>
                     </li>
-                    <li id="id-menu-contact" class="eg-menu-option tm-nav-item">
-                        <a onclick="showDiv('id-contact'); showSelected('id-menu-contact');" class="tm-nav-link">
-                            <i class="fas fa-ellipsis-h"></i>Hobbies
+                    <li id="id-menu-hobbies" class="eg-menu-option tm-nav-item">
+                        <a onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');" class="tm-nav-link">
+                            <i class="fa-solid fa-person-skiing"></i>Hobbies
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="tm-mb-65">
-                <a rel="nofollow" href="https://fb.com/templatemo" target="_blank" class="tm-social-link">
-                    <i class="fab fa-facebook tm-social-icon"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" class="tm-social-link">
-                    <i class="fab fa-twitter tm-social-icon"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank" class="tm-social-link">
-                    <i class="fab fa-instagram tm-social-icon"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="tm-social-link">
-                    <i class="fab fa-linkedin tm-social-icon"></i>
-                </a>
-            </div>
         </div>
     </header>
     <div id="id-home" class="container-fluid eg-page">
@@ -107,7 +102,10 @@
                 am fairly invloved: I am a campus tour guide, a Web Developer for the Marketing
                 Department, and an active member of Phi Sigma Sigma Women's Fraternity and the
                 Student Alumni Society (SAS).
-
+            </p>
+            <p>Check out my
+                <a onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');" id="a-hobbies"> hobbies</a>
+                tab to find out what I love to do!
             </p>
         </main>
     </div>
@@ -175,129 +173,43 @@
             </div>
         </main>
     </div>
-    <div id="id-contact" class="container-fluid eg-page" style="display: none;">
+    <div id="id-hobbies" class="container-fluid eg-page" style="display: none;">
         <main class="tm-main">
-            <!-- Search form -->
-            <div class="row tm-row">
-                <div class="col-12">
-                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">
-                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..."
-                            aria-label="Search">
-                        <button class="tm-search-button" type="submit">
-                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="row tm-row tm-mb-45">
-                <div class="col-12">
-                    <hr class="tm-hr-primary tm-mb-55">
-                    <div class="gmap_canvas">
-                        <!-- Google Map -->
-                        <iframe width="100%" height="477" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="row tm-row tm-mb-120">
-                <div class="col-12">
-                    <h2 class="tm-color-primary tm-post-title tm-mb-60">Contact Us</h2>
-                </div>
-                <div class="col-lg-7 tm-contact-left">
-                    <form method="POST" action="" class="mb-5 ml-auto mr-0 tm-contact-form">
-                        <div class="form-group row mb-4">
-                            <label for="name" class="col-sm-3 col-form-label text-right tm-color-primary">Name</label>
-                            <div class="col-sm-9">
-                                <input class="form-control mr-0 ml-auto" name="name" id="name" type="text" required>
-                            </div>
-                        </div>
-                        <div class="form-group row mb-4">
-                            <label for="email" class="col-sm-3 col-form-label text-right tm-color-primary">Email</label>
-                            <div class="col-sm-9">
-                                <input class="form-control mr-0 ml-auto" name="email" id="email" type="email" required>
-                            </div>
-                        </div>
-                        <div class="form-group row mb-4">
-                            <label for="subject"
-                                class="col-sm-3 col-form-label text-right tm-color-primary">Subject</label>
-                            <div class="col-sm-9">
-                                <input class="form-control mr-0 ml-auto" name="subject" id="subject" type="text"
-                                    required>
-                            </div>
-                        </div>
-                        <div class="form-group row mb-5">
-                            <label for="message"
-                                class="col-sm-3 col-form-label text-right tm-color-primary">Message</label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control mr-0 ml-auto" name="message" id="message" rows="8"
-                                    required></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row text-right">
-                            <div class="col-12">
-                                <button class="tm-btn tm-btn-primary tm-btn-small">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-5 tm-contact-right">
-                    <address class="mb-4 tm-color-gray">
-                        120 Lorem ipsum dolor sit amet,
-                        consectetur adipiscing 10550
-                    </address>
-                    <span class="d-block">
-                        Tel:
-                        <a href="tel:060-070-0980" class="tm-color-gray">060-070-0980</a>
-                    </span>
-                    <span class="mb-4 d-block">
-                        Email:
-                        <a href="mailto:info@company.com" class="tm-color-gray">info@company.com</a>
-                    </span>
-                    <p class="mb-5 tm-line-height-short">
-                        Maecenas eu mi eu dui cursus
-                        consequat non eu metus. Morbi ac
-                        turpis eleifend, commodo purus
-                        eget, commodo mauris.
-                    </p>
-                    <ul class="tm-social-links">
-                        <li class="mb-2">
-                            <a href="https://facebook.com" class="d-flex align-items-center justify-content-center">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://twitter.com" class="d-flex align-items-center justify-content-center">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://youtube.com" class="d-flex align-items-center justify-content-center">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://instagram.com"
-                                class="d-flex align-items-center justify-content-center mr-0">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <footer class="row tm-row">
-                <div class="col-md-6 col-12 tm-color-gray">
-                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com"
-                        class="tm-external-link">TemplateMo</a>
-                </div>
-                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-                    Copyright 2020 Xtra Blog Company Co. Ltd.
-                </div>
-            </footer>
+            <h1 class="eg-page-title">Hobbies</h1>
+            <h2 class="eg-page-heading">Skiing</h2>
+            <p>
+                I have been skiing since I was 6 years old, and to this day there is not feeling that
+                matches the wind on your face as you rush down a slope nearing speeds of 60 mph. I have been
+                all over the east coast, visiting mountains such as Killington, Pico, Lake Placid, Whiteface
+                and so many more! In December 2021 I made my first ski trip out west and discovered knee-deep
+                powder for the first time. Almost every mountain I've visited is represented as a sticker on
+                my laptop!
+            </p>
+            <h2 class="eg-page-heading">3D Printing</h2>
+            <p>
+                In highschool I used a 3D printer for the first time and ever since I was hooked! I bought my own Ender
+                3 Pro in May 2020 and since then I have tinkered non-stop. I have upgraded my printer to have: an all
+                metal hotend, a glass buildplate, a silent motherboard, auto bed levelling, and even compiled my own
+                firmware that the printer runs on!
+            </p>
+            <p>
+                You can check out some of designs and prints
+                <a rel="nofollow" href="https://www.thingiverse.com/emgore1016/designs" target="_blank">
+                    here.
+                </a>
+            </p>
+            <h2 class="eg-page-heading">Traveling</h2>
+            <p>
+                Ever since I was little I have been travelling with my family to visit different countries and states.
+                So far, I have been to 9 different countries and 22 US states. My longest trip was when I stayed in
+                Prague, Czech Republic for two months as partof WPI's study abroad program. It was a truly amazing
+                experience and I can't wait to see where else life will take me next!
+            </p>
         </main>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/templatemo-script.js"></script>
+    <script src="https://kit.fontawesome.com/84e0d4d36e.js" crossorigin="anonymous"></script>
     <script>
         function showDiv(id) {
             var all = document.getElementsByClassName("eg-page");
