@@ -11,6 +11,7 @@ https://templatemo.com/tm-553-xtra-blog
     --my-gray: #A8C7C7;
     --my-teal: #4898A6;
     --my-gold: #DCBC7F;
+    --my-light-gold: #EDDDBF;
     --my-off-white: #F5F7F3;
     --my-off-white-transparent: #F5F7F3EF;
 }
@@ -596,6 +597,11 @@ figcaption {
     margin-right: 0;
 }
 
+.eg-map {
+    width: calc(100vw - 625px);
+    height: 40vh;
+}
+
 .tm-pt-20 {
     padding-top: 20px;
 }
@@ -772,6 +778,11 @@ a:hover figcaption {
         margin-left: 320px;
         width: calc(100% - 320px);
     }
+
+    .eg-map {
+        width: calc(100vw - 550px);
+        height: 40vh;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -869,6 +880,10 @@ a:hover figcaption {
 
     .tm-post-full {
         max-width: none;
+    }
+
+    .eg-map {
+        width: 100%;
     }
 }
 
