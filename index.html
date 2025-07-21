@@ -1,605 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emily Gorelik</title>
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/templatemo-xtra-blog.css" rel="stylesheet" />
-    <link rel="icon" href="img/brand-alt.png" />
 
-    <!-- TemplateMo 553 Xtra Blog https://templatemo.com/tm-553-xtra-blog -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emily Gorelik</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/templatemo-xtra-blog.css" rel="stylesheet" />
+  <link rel="icon" href="img/brand-alt.png" />
 
-  <body>
-    <header class="tm-header" id="tm-header">
-      <div class="tm-header-wrapper">
-        <button
-          class="navbar-toggler"
-          type="button"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="tm-site-header">
-          <div class="mb-3 mx-auto tm-site-logo">
-            <img class="eg-brand-img-menu" src="img/brand-alt.png" />
-          </div>
-          <h1 class="text-center">Emily Gorelik</h1>
+  <!-- TemplateMo 553 Xtra Blog https://templatemo.com/tm-553-xtra-blog -->
+</head>
+
+<body>
+  <header class="tm-header" id="tm-header">
+    <div class="tm-header-wrapper">
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="tm-site-header">
+        <div class="mb-3 mx-auto tm-site-logo">
+          <img class="eg-brand-img-menu" src="img/brand-alt.png" />
         </div>
-        <div class="eg-social-links">
-          <a
-            href="https://www.linkedin.com/in/emily-gorelik/"
-            target="_blank"
-            class="tm-social-link"
-          >
-            <i class="fab fa-linkedin tm-social-icon"></i>
-          </a>
-          <a
-            href="https://github.com/emilygorelik"
-            target="_blank"
-            class="tm-social-link"
-          >
-            <i class="fab fa-github tm-social-icon"></i>
-          </a>
-        </div>
-        <nav class="tm-nav" id="tm-nav">
-          <ul>
-            <li id="id-menu-home" class="eg-menu-option tm-nav-item active">
-              <a
-                onclick="showDiv('id-home'); showSelected('id-menu-home');"
-                class="tm-nav-link"
-              >
-                <i class="fas fa-home"></i>Main Page
-              </a>
-            </li>
-            <li id="id-menu-index" class="eg-menu-option tm-nav-item">
-              <a
-                onclick="showDiv('id-aboutme'); showSelected('id-menu-index');"
-                class="tm-nav-link"
-              >
-                <i class="fas fa-user"></i>About Me
-              </a>
-            </li>
-            <li id="id-menu-post" class="eg-menu-option tm-nav-item">
-              <a
-                onclick="showDiv('id-softwareprojects'); showSelected('id-menu-post');"
-                class="tm-nav-link"
-              >
-                <i class="fas fa-code"></i>Software Projects
-              </a>
-            </li>
-            <li id="id-menu-about" class="eg-menu-option tm-nav-item">
-              <a
-                onclick="showDiv('id-experience'); showSelected('id-menu-about');"
-                class="tm-nav-link"
-              >
-                <i class="fas fa-briefcase"></i>Experience
-              </a>
-            </li>
-            <li id="id-menu-hobbies" class="eg-menu-option tm-nav-item">
-              <a
-                onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');"
-                class="tm-nav-link"
-              >
-                <i class="fa-solid fa-person-skiing"></i>Hobbies
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <h1 class="text-center">Emily Gorelik</h1>
       </div>
-    </header>
-    <div id="id-home" class="container-fluid eg-page">
-      <main class="tm-main">
-        <div style="display: flex; height: 100vh">
-          <div id="eg-brand-box">
-            <img class="eg-brand-img" src="img/brand.png" />
-            <h2>
-              Emily Gorelik
-              <br /><br />
-              Developer | Designer
-            </h2>
-          </div>
-        </div>
-      </main>
-    </div>
-    <div id="id-aboutme" class="container-fluid eg-page" style="display: none">
-      <main class="tm-main">
-        <h1 class="eg-page-title">About Me</h1>
-        <div id="eg-intro-par-wrapper">
-          <img id="eg-profile" src="img/profile.jpg" />
-          <p class="eg-par">
-            I am graduate of Worcester Polytechnic Institute (WPI) with a BS in
-            Computer Science and a minor in Data Science. I have loved
-            technology for as long as I can remember and am always thinking
-            about how I can create applications that will benefit myself and
-            others. My career goal is to make technology accessible to everyone
-            by designing intuitive webpages that are easy to navigate and simple
-            to master.
-          </p>
-        </div>
-        <p>
-          When I am not sitting behind my laptop, you can find me tinkering and
-          upgrading my 3D printer, tearing up the slopes (weather dependent), or
-          playing boardgames.
-        </p>
-        <p>
-          Check out my
-          <a
-            onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');"
-            id="a-hobbies"
-          >
-            hobbies</a
-          >
-          tab to find out what I love to do!
-        </p>
-      </main>
-    </div>
-    <div
-      id="id-softwareprojects"
-      class="container-fluid eg-page"
-      style="display: none"
-    >
-      <main class="tm-main">
-        <h1 class="eg-page-title">Software Projects</h1>
-        <p>
-          From picking a college to picking a restaurant, why not make programs
-          make the desisions that you can't figure out yourself? If I can make a
-          program do it for me, I will! Take a look through my portfolio to find
-          out exactly what I make computers do in my day-to-day life.
-        </p>
-        <h2 class="eg-page-heading">
-          Developing Quality of Life Features for the E-TRIALS Platform
-        </h2>
-        <div class="eg-swp-project-wrapper">
-          <img class="eg-swp-image" src="img/projects/taf.png" />
-          <p class="eg-par">
-            Following the COVID-19 pandemic, the ASSISTments Foundation launched
-            E-TRIALS (EdTech Research Infrastructure to Advance Learning
-            Science) as a tool for researchers to understand different teaching
-            tools and methods, with the goal of understanding how best to
-            provide feedback and assistance to students. In this project,
-            students worked alongside full-time employees in an Agile
-            environment to improve the current E-TRIALS platform. Additions were
-            made to the previous release of the platform, adding in new
-            functionality and improving the overall user experience. You can
-            read the final report documenting my work<a
-              rel="nofollow"
-              href="eagorelik-MQPpaper.pdf"
-              target="_blank"
-            >
-              here.
+      <div class="eg-social-links">
+        <a href="https://www.linkedin.com/in/emily-gorelik/" target="_blank" class="tm-social-link">
+          <i class="fab fa-linkedin tm-social-icon"></i>
+        </a>
+        <a href="https://github.com/emilygorelik" target="_blank" class="tm-social-link">
+          <i class="fab fa-github tm-social-icon"></i>
+        </a>
+      </div>
+      <nav class="tm-nav" id="tm-nav">
+        <ul>
+          <li id="id-menu-home" class="eg-menu-option tm-nav-item active">
+            <a onclick="showDiv('id-home'); showSelected('id-menu-home');" class="tm-nav-link">
+              <i class="fas fa-home"></i>Main Page
             </a>
-          </p>
-        </div>
-        <br />
-        <h2 class="eg-page-heading">
-          Equipment Tracking Software for Brigham and Women's Hospital
-        </h2>
-        <div class="eg-swp-project-wrapper">
-          <img class="eg-swp-image" src="img/projects/brighamwomens.png" />
-          <p class="eg-par">
-            Full-Stack Java application to manage equipment across hospital
-            floors for Brigham and Women's Hospital. As the Front-End Lead
-            Developer of an eleven-person team, I was responsible for managing
-            the layout and flow of the overall application. I also conducted
-            quality control and acted as a resource for the junior developers on
-            the team. The source code for the project can be seen
-            <a
-              rel="nofollow"
-              href="https://github.com/emgore1016/SoftEngFinal"
-              target="_blank"
-            >
-              here.
+          </li>
+          <li id="id-menu-index" class="eg-menu-option tm-nav-item">
+            <a onclick="showDiv('id-aboutme'); showSelected('id-menu-index');" class="tm-nav-link">
+              <i class="fas fa-user"></i>About Me
             </a>
-          </p>
-        </div>
-        <br />
-        <h2 class="eg-page-heading">Universitea</h2>
-        <div class="eg-swp-project-wrapper">
-          <img class="eg-swp-image" src="img/projects/universitea.png" />
-          <p class="eg-par">
-            Two true facts: <br />
-            1. There are thousands of colleges in the United States. <br />
-            2. I was (and still am) a very indecisive person. <br />
-            This led to the creation of Universitea. Your one-stop shop to
-            finding the college that is your perfect cup of tea. Many college
-            search engines can filter by which school is the best for Computer
-            Science or which has the best food on campus, but I wanted to know
-            everything at once, and Universitea was born! Universitea gives
-            users a comprehensive list of everything they're looking for, and
-            even filters for safety, target, and reach schools.
-          </p>
-        </div>
-      </main>
+          </li>
+          <li id="id-menu-post" class="eg-menu-option tm-nav-item">
+            <a onclick="showDiv('id-softwareprojects'); showSelected('id-menu-post');" class="tm-nav-link">
+              <i class="fas fa-code"></i>Software Projects
+            </a>
+          </li>
+          <li id="id-menu-about" class="eg-menu-option tm-nav-item">
+            <a onclick="showDiv('id-experience'); showSelected('id-menu-about');" class="tm-nav-link">
+              <i class="fas fa-briefcase"></i>Experience
+            </a>
+          </li>
+          <li id="id-menu-hobbies" class="eg-menu-option tm-nav-item">
+            <a onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');" class="tm-nav-link">
+              <i class="fa-solid fa-person-skiing"></i>Hobbies
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div
-      id="id-experience"
-      class="container-fluid eg-page"
-      style="display: none"
-    >
-      <main class="tm-main">
-        <h1 class="eg-page-title">Experience</h1>
-        <div class="eg-experience-wrapper">
-          <img class="eg-experience-image" src="img/companies/its.png" />
-          <p class="eg-par">
-            <b>Front-End Software Engineer | New York State ITS</b> <br />
-            <b>Oct '24 - Present</b> <br />
-          </p>
+  </header>
+  <div id="id-home" class="container-fluid eg-page">
+    <main class="tm-main">
+      <div style="display: flex; height: 100vh">
+        <div id="eg-brand-box">
+          <img class="eg-brand-img" src="img/brand.png" />
+          <h2>
+            Emily Gorelik
+            <br /><br />
+            Developer | Designer
+          </h2>
         </div>
-        <div class="eg-experience-wrapper">
-          <img class="eg-experience-image" src="img/companies/jg.png" />
-          <p class="eg-par">
-            <b>Associate Software Engineer | Jahnel Group</b> <br />
-            <b>June '23 - July '24</b> <br />
-            - Lead Full-Stack Developer for a React Native application for an
-            inventory and invoice tracking application for a client in the
-            automotive industry <br />
-            - Lead Frontend Developer on an internal trivia application built in
-            the DERN stack (DynamoDB, Express, React, Node.js) <br />
-            - Serve as a versatile Software Engineering Consultant, meeting each
-            client's unique needs
-          </p>
-        </div>
-        <div class="eg-experience-wrapper">
-          <img class="eg-experience-image" src="img/companies/taf.png" />
-          <p class="eg-par">
-            <b>Junior Software Developer | The Assistments Foundation</b> <br />
-            <b>Aug '22 - May '23</b> <br />
-            - Redesigned web pages with the goal of improving user experience<br />
-            - Modified existing software to correct errors, and upgrade
-            interfaces to improve performance<br />
-            - Worked in an Agile team alongside other developers to rapidly
-            develop features
-          </p>
-        </div>
-        <div class="eg-experience-wrapper">
-          <img class="eg-experience-image" src="img/companies/gsi.png" />
-          <p class="eg-par">
-            <b>Software Engineer Intern | Geisel Software, Inc.</b> <br />
-            <b>Jan '22 - Oct '22</b> <br />
-            - Lead developer on Internal Financial Dashboard to predict company
-            revenue and developer availability<br />
-            - Maintain company notification software which ensures company best
-            practices <br />
-            - Work alongside full-time developers on biweekly sprints and issues
-          </p>
-        </div>
-        <div class="eg-experience-wrapper">
-          <img class="eg-experience-image" src="img/companies/wpi.png" />
-          <p class="eg-par">
-            <b>Web Developer | WPI Marketing Department</b> <br />
-            <b>Mar '21 - Oct '21</b> <br />
-            - Create responsive design widgets for the main University website
-            <br />
-            - Provide feedback on layout design <br />
-            - Troubleshoot issues and solve critical errors
-          </p>
-        </div>
-        <div class="eg-experience-wrapper">
-          <img class="eg-experience-image" src="img/companies/cci.png" />
-          <p class="eg-par">
-            <b>Software Development Intern | Computer Crafts LLC</b> <br />
-            <b>May '20 - Jan '21</b> <br />
-            - Worked with IT department with conversion of in-house MRP software
-            to web-based version <br />
-            - Assisted production department to improve efficiency of inventory
-            tracking and assets management system
-          </p>
-        </div>
-      </main>
-    </div>
-    <div id="id-hobbies" class="container-fluid eg-page" style="display: none">
-      <main class="tm-main">
-        <h1 class="eg-page-title">Hobbies</h1>
-        <h2 class="eg-page-heading">Skiing</h2>
-        <p>
-          I have been skiing since I was 6 years old, and to this day there is
-          not feeling that matches the wind on your face as you rush down a
-          slope nearing speeds of 60 mph. I have been all over the east coast,
-          visiting mountains such as Killington, Pico, Lake Placid, Whiteface
-          and so many more! In December 2021 I made my first ski trip out west
-          and discovered knee-deep powder for the first time. Almost every
-          mountain I've visited is represented as a sticker on my laptop!
+      </div>
+    </main>
+  </div>
+  <div id="id-aboutme" class="container-fluid eg-page" style="display: none">
+    <main class="tm-main">
+      <h1 class="eg-page-title">About Me</h1>
+      <div id="eg-intro-par-wrapper">
+        <img id="eg-profile" src="img/profile.jpg" />
+        <p class="eg-par">
+          I am graduate of Worcester Polytechnic Institute (WPI) with a BS in
+          Computer Science and a minor in Data Science. I have loved
+          technology for as long as I can remember and am always thinking
+          about how I can create applications that will benefit myself and
+          others. My career goal is to make technology accessible to everyone
+          by designing intuitive webpages that are easy to navigate and simple
+          to master.
         </p>
-        <h2 class="eg-page-heading">3D Printing</h2>
-        <p>
-          In highschool I used a 3D printer for the first time and ever since I
-          was hooked! I bought my own Ender 3 Pro in May 2020 and since then I
-          have tinkered non-stop. I have upgraded my printer to have: an all
-          metal hotend, a glass buildplate, a silent motherboard, auto bed
-          levelling, and even compiled my own firmware that the printer runs on!
-        </p>
-        <p>
-          You can check out some of designs and prints
-          <a
-            rel="nofollow"
-            href="https://www.thingiverse.com/emgore1016/designs"
-            target="_blank"
-          >
-            on my thingiverse page.
+      </div>
+      <p>
+        When I am not sitting behind my laptop, you can find me tinkering and
+        upgrading my 3D printer, tearing up the slopes (weather dependent), or
+        playing boardgames.
+      </p>
+      <p>
+        Check out my
+        <a onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');" id="a-hobbies">
+          hobbies</a>
+        tab to find out what I love to do!
+      </p>
+    </main>
+  </div>
+  <div id="id-softwareprojects" class="container-fluid eg-page" style="display: none">
+    <main class="tm-main">
+      <h1 class="eg-page-title">Software Projects</h1>
+      <p>
+        From picking a college to picking a restaurant, why not make programs
+        make the desisions that you can't figure out yourself? If I can make a
+        program do it for me, I will! Take a look through my portfolio to find
+        out exactly what I make computers do in my day-to-day life.
+      </p>
+      <h2 class="eg-page-heading">
+        Developing Quality of Life Features for the E-TRIALS Platform
+      </h2>
+      <div class="eg-swp-project-wrapper">
+        <img class="eg-swp-image" src="img/projects/taf.png" />
+        <p class="eg-par">
+          Following the COVID-19 pandemic, the ASSISTments Foundation launched
+          E-TRIALS (EdTech Research Infrastructure to Advance Learning
+          Science) as a tool for researchers to understand different teaching
+          tools and methods, with the goal of understanding how best to
+          provide feedback and assistance to students. In this project,
+          students worked alongside full-time employees in an Agile
+          environment to improve the current E-TRIALS platform. Additions were
+          made to the previous release of the platform, adding in new
+          functionality and improving the overall user experience. You can
+          read the final report documenting my work<a rel="nofollow" href="eagorelik-MQPpaper.pdf" target="_blank">
+            here.
           </a>
         </p>
-        <h2 class="eg-page-heading">Fiber Arts and Sewing</h2>
-        <p>
-          My grandmother first taught me how to knit as a kid, but I didn't seriously
-          pick up knitting and crocheting until after graduation college. I have made blankets,
-          socks, and sweaters, and other things in between. Then I bought a sewing machine and began 
-          making clothes and bags. I love making unique things and it's really nice to get away from 
-          the computer screen and do something with my hands.
+      </div>
+      <br />
+      <h2 class="eg-page-heading">
+        Equipment Tracking Software for Brigham and Women's Hospital
+      </h2>
+      <div class="eg-swp-project-wrapper">
+        <img class="eg-swp-image" src="img/projects/brighamwomens.png" />
+        <p class="eg-par">
+          Full-Stack Java application to manage equipment across hospital
+          floors for Brigham and Women's Hospital. As the Front-End Lead
+          Developer of an eleven-person team, I was responsible for managing
+          the layout and flow of the overall application. I also conducted
+          quality control and acted as a resource for the junior developers on
+          the team. The source code for the project can be seen
+          <a rel="nofollow" href="https://github.com/emgore1016/SoftEngFinal" target="_blank">
+            here.
+          </a>
         </p>
-        <p>
-          You can follow all my crafting adventures on my instagram
-          <a
-            rel="nofollow"
-            href="https://www.instagram.com/emilys_craft_of_the_day/"
-            target="_blank"
-          >
+      </div>
+      <br />
+      <h2 class="eg-page-heading">Universitea</h2>
+      <div class="eg-swp-project-wrapper">
+        <img class="eg-swp-image" src="img/projects/universitea.png" />
+        <p class="eg-par">
+          Two true facts: <br />
+          1. There are thousands of colleges in the United States. <br />
+          2. I was (and still am) a very indecisive person. <br />
+          This led to the creation of Universitea. Your one-stop shop to
+          finding the college that is your perfect cup of tea. Many college
+          search engines can filter by which school is the best for Computer
+          Science or which has the best food on campus, but I wanted to know
+          everything at once, and Universitea was born! Universitea gives
+          users a comprehensive list of everything they're looking for, and
+          even filters for safety, target, and reach schools.
+        </p>
+      </div>
+    </main>
+  </div>
+  <div id="id-experience" class="container-fluid eg-page" style="display: none">
+    <main class="tm-main">
+      <h1 class="eg-page-title">Experience</h1>
+      <div class="eg-experience-wrapper">
+        <img class="eg-experience-image" src="img/companies/its.png" />
+        <p class="eg-par">
+          <b>Front-End Software Engineer | New York State ITS</b> <br />
+          <b>Oct '24 - Present</b> <br />
+        </p>
+      </div>
+      <div class="eg-experience-wrapper">
+        <img class="eg-experience-image" src="img/companies/jg.png" />
+        <p class="eg-par">
+          <b>Associate Software Engineer | Jahnel Group</b> <br />
+          <b>June '23 - July '24</b> <br />
+          - Lead Full-Stack Developer for a React Native application for an
+          inventory and invoice tracking application for a client in the
+          automotive industry <br />
+          - Lead Frontend Developer on an internal trivia application built in
+          the DERN stack (DynamoDB, Express, React, Node.js) <br />
+          - Serve as a versatile Software Engineering Consultant, meeting each
+          client's unique needs
+        </p>
+      </div>
+      <div class="eg-experience-wrapper">
+        <img class="eg-experience-image" src="img/companies/taf.png" />
+        <p class="eg-par">
+          <b>Junior Software Developer | The Assistments Foundation</b> <br />
+          <b>Aug '22 - May '23</b> <br />
+          - Redesigned web pages with the goal of improving user experience<br />
+          - Modified existing software to correct errors, and upgrade
+          interfaces to improve performance<br />
+          - Worked in an Agile team alongside other developers to rapidly
+          develop features
+        </p>
+      </div>
+      <div class="eg-experience-wrapper">
+        <img class="eg-experience-image" src="img/companies/gsi.png" />
+        <p class="eg-par">
+          <b>Software Engineer Intern | Geisel Software, Inc.</b> <br />
+          <b>Jan '22 - Oct '22</b> <br />
+          - Lead developer on Internal Financial Dashboard to predict company
+          revenue and developer availability<br />
+          - Maintain company notification software which ensures company best
+          practices <br />
+          - Work alongside full-time developers on biweekly sprints and issues
+        </p>
+      </div>
+      <div class="eg-experience-wrapper">
+        <img class="eg-experience-image" src="img/companies/wpi.png" />
+        <p class="eg-par">
+          <b>Web Developer | WPI Marketing Department</b> <br />
+          <b>Mar '21 - Oct '21</b> <br />
+          - Create responsive design widgets for the main University website
+          <br />
+          - Provide feedback on layout design <br />
+          - Troubleshoot issues and solve critical errors
+        </p>
+      </div>
+      <div class="eg-experience-wrapper">
+        <img class="eg-experience-image" src="img/companies/cci.png" />
+        <p class="eg-par">
+          <b>Software Development Intern | Computer Crafts LLC</b> <br />
+          <b>May '20 - Jan '21</b> <br />
+          - Worked with IT department with conversion of in-house MRP software
+          to web-based version <br />
+          - Assisted production department to improve efficiency of inventory
+          tracking and assets management system
+        </p>
+      </div>
+    </main>
+  </div>
+  <div id="id-hobbies" class="container-fluid eg-page" style="display: none">
+    <main class="tm-main">
+      <h1 class="eg-page-title">Hobbies</h1>
+      <h2 class="eg-page-heading">Skiing</h2>
+      <p>
+        I have been skiing since I was 6 years old, and to this day there is
+        not feeling that matches the wind on your face as you rush down a
+        slope nearing speeds of 60 mph. I have been all over the east coast,
+        visiting mountains such as Killington, Pico, Lake Placid, Whiteface
+        and so many more! In December 2021 I made my first ski trip out west
+        and discovered knee-deep powder for the first time. Almost every
+        mountain I've visited is represented as a sticker on my laptop!
+      </p>
+      <h2 class="eg-page-heading">3D Printing</h2>
+      <p>
+        In highschool I used a 3D printer for the first time and ever since I
+        was hooked! I bought my own Ender 3 Pro in May 2020 and since then I
+        have tinkered non-stop. I have upgraded my printer to have: an all
+        metal hotend, a glass buildplate, a silent motherboard, auto bed
+        levelling, and even compiled my own firmware that the printer runs on!
+      </p>
+      <p>
+        You can check out some of designs and prints
+        <a rel="nofollow" href="https://www.thingiverse.com/emgore1016/designs" target="_blank">
+          on my thingiverse page.
+        </a>
+      </p>
+      <h2 class="eg-page-heading">Fiber Arts and Sewing</h2>
+      <p>
+        My grandmother first taught me how to knit as a kid, but I didn't seriously
+        pick up knitting and crocheting until after graduation college. I have made blankets,
+        socks, and sweaters, and other things in between. Then I bought a sewing machine and began
+        making clothes and bags. I love making unique things and it's really nice to get away from
+        the computer screen and do something with my hands.
+      </p>
+      <p>
+        You can follow all my crafting adventures on my instagram
+        <a rel="nofollow" href="https://www.instagram.com/emilys_craft_of_the_day/" target="_blank">
           instagram account.
-          </a>
-        </p>
-        <h2 class="eg-page-heading">Traveling</h2>
-        <p>
-          Ever since I was little I have been travelling with my family to visit
-          different countries and states. So far, I have been to 9 different
-          countries and 22 US states. My longest trip was when I stayed in
-          Prague, Czech Republic for two months as part of WPI's study abroad
-          program. It was a truly amazing experience and I can't wait to see
-          where else life will take me next!
-        </p>
-        <script
-          src="https://www.amcharts.com/lib/3/ammap.js"
-          type="text/javascript"
-        ></script>
-        <script
-          src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"
-          type="text/javascript"
-        ></script>
-        <script
-          src="https://www.amcharts.com/lib/3/themes/dark.js"
-          type="text/javascript"
-        ></script>
-        <br />
-        <h3>World Map</h3>
-        <div id="map-world" class="eg-map"></div>
-        <script type="text/javascript">
-          var map = AmCharts.makeChart("map-world", {
-            type: "map",
-            theme: "dark",
-            projection: "mercator",
-            panEventsEnabled: true,
-            backgroundColor: "#053D4E",
-            backgroundAlpha: 1,
-            zoomControl: {
-              zoomControlEnabled: true,
-            },
-            dataProvider: {
-              map: "worldHigh",
-              getAreasFromMap: false,
-              areas: [
-                {
-                  id: "BY",
-                  showAsSelected: true,
-                },
-                {
-                  id: "CZ",
-                  showAsSelected: true,
-                },
-                {
-                  id: "RU",
-                  showAsSelected: true,
-                },
-                {
-                  id: "CA",
-                  showAsSelected: true,
-                },
-                {
-                  id: "DO",
-                  showAsSelected: true,
-                },
-                {
-                  id: "MX",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US",
-                  showAsSelected: true,
-                },
-                {
-                  id: "IL",
-                  showAsSelected: true,
-                },
-                {
-                  id: "JO",
-                  showAsSelected: true,
-                },
-                {
-                  id: "PS",
-                  showAsSelected: true,
-                },
-                {
-                  id: "ES",
-                  showAsSelected: true,
-                }
-              ],
-            },
-            areasSettings: {
-              autoZoom: false,
-              color: "#A8C7C7",
-              colorSolid: "#DCBC7F",
-              selectedColor: "#DCBC7F",
-              outlineColor: "#000000",
-              rollOverColor: "#EDDDBF",
-              rollOverOutlineColor: "#000000",
-            },
-          });
-        </script>
-        <br />
-        <h3>United States</h3>
-        <script
-          src="https://www.amcharts.com/lib/3/ammap.js"
-          type="text/javascript"
-        ></script>
-        <script
-          src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js"
-          type="text/javascript"
-        ></script>
-        <script
-          src="https://www.amcharts.com/lib/3/themes/dark.js"
-          type="text/javascript"
-        ></script>
-        <div id="map-US" class="eg-map"></div>
-        <br />
-        <br />
-        <script type="text/javascript">
-          var map = AmCharts.makeChart("map-US", {
-            type: "map",
-            theme: "dark",
-            panEventsEnabled: true,
-            backgroundColor: "#053D4E",
-            backgroundAlpha: 1,
-            zoomControl: {
-              zoomControlEnabled: true,
-            },
-            dataProvider: {
-              map: "usaHigh",
-              getAreasFromMap: false,
-              areas: [
-                {
-                  id: "US-AZ",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-CO",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-CT",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-DE",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-FL",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-GA",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-MA",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-MD",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-ME",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-NC",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-NH",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-NJ",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-NV",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-NY",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-OH",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-PA",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-RI",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-SC",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-UT",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-VA",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-VT",
-                  showAsSelected: true,
-                },
-                {
-                  id: "US-WV",
-                  showAsSelected: true,
-                },
-              ],
-            },
-            areasSettings: {
-              autoZoom: false,
-              color: "#A8C7C7",
-              colorSolid: "#DCBC7F",
-              selectedColor: "#DCBC7F",
-              outlineColor: "#000000",
-              rollOverColor: "#EDDDBF",
-              rollOverOutlineColor: "#000000",
-            },
-          });
-        </script>
-      </main>
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/84e0d4d36e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      function showDiv(id) {
-        var all = document.getElementsByClassName("eg-page");
-        var active = document.getElementById(id);
-        var i;
-        for (i = 0; i < all.length; i++) {
-          all[i].style.display = "none";
-        }
-        active.style.display = "block";
+        </a>
+      </p>
+      <h2 class="eg-page-heading">Traveling</h2>
+      <p>
+        Ever since I was little I have been travelling with my family to visit
+        different countries and states. So far, I have been to 9 different
+        countries and 22 US states. My longest trip was when I stayed in
+        Prague, Czech Republic for two months as part of WPI's study abroad
+        program. It was a truly amazing experience and I can't wait to see
+        where else life will take me next!
+      </p>
+      <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+      <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+      <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+      <br />
+      <h3>World Map</h3>
+      <div id="map-world" class="eg-map"></div>
+      <script type="text/javascript">
+        var map = AmCharts.makeChart("map-world", {
+          type: "map",
+          theme: "dark",
+          projection: "mercator",
+          panEventsEnabled: true,
+          backgroundColor: "#053D4E",
+          backgroundAlpha: 1,
+          zoomControl: {
+            zoomControlEnabled: true,
+          },
+          dataProvider: {
+            map: "worldHigh",
+            getAreasFromMap: false,
+            areas: [
+              {
+                id: "BY",
+                showAsSelected: true,
+              },
+              {
+                id: "CZ",
+                showAsSelected: true,
+              },
+              {
+                id: "RU",
+                showAsSelected: true,
+              },
+              {
+                id: "CA",
+                showAsSelected: true,
+              },
+              {
+                id: "DO",
+                showAsSelected: true,
+              },
+              {
+                id: "MX",
+                showAsSelected: true,
+              },
+              {
+                id: "US",
+                showAsSelected: true,
+              },
+              {
+                id: "IL",
+                showAsSelected: true,
+              },
+              {
+                id: "JO",
+                showAsSelected: true,
+              },
+              {
+                id: "PS",
+                showAsSelected: true,
+              },
+              {
+                id: "ES",
+                showAsSelected: true,
+              },
+              {
+                id: "GB",
+                showAsSelected: true,
+              },
+            ],
+          },
+          areasSettings: {
+            autoZoom: false,
+            color: "#A8C7C7",
+            colorSolid: "#DCBC7F",
+            selectedColor: "#DCBC7F",
+            outlineColor: "#000000",
+            rollOverColor: "#EDDDBF",
+            rollOverOutlineColor: "#000000",
+          },
+        });
+      </script>
+      <br />
+      <h3>United States</h3>
+      <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+      <script src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js" type="text/javascript"></script>
+      <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+      <div id="map-US" class="eg-map"></div>
+      <br />
+      <br />
+      <script type="text/javascript">
+        var map = AmCharts.makeChart("map-US", {
+          type: "map",
+          theme: "dark",
+          panEventsEnabled: true,
+          backgroundColor: "#053D4E",
+          backgroundAlpha: 1,
+          zoomControl: {
+            zoomControlEnabled: true,
+          },
+          dataProvider: {
+            map: "usaHigh",
+            getAreasFromMap: false,
+            areas: [
+              {
+                id: "US-AZ",
+                showAsSelected: true,
+              },
+              {
+                id: "US-CO",
+                showAsSelected: true,
+              },
+              {
+                id: "US-CT",
+                showAsSelected: true,
+              },
+              {
+                id: "US-DE",
+                showAsSelected: true,
+              },
+              {
+                id: "US-FL",
+                showAsSelected: true,
+              },
+              {
+                id: "US-GA",
+                showAsSelected: true,
+              },
+              {
+                id: "US-MA",
+                showAsSelected: true,
+              },
+              {
+                id: "US-MD",
+                showAsSelected: true,
+              },
+              {
+                id: "US-ME",
+                showAsSelected: true,
+              },
+              {
+                id: "US-NC",
+                showAsSelected: true,
+              },
+              {
+                id: "US-NH",
+                showAsSelected: true,
+              },
+              {
+                id: "US-NJ",
+                showAsSelected: true,
+              },
+              {
+                id: "US-NV",
+                showAsSelected: true,
+              },
+              {
+                id: "US-NY",
+                showAsSelected: true,
+              },
+              {
+                id: "US-OH",
+                showAsSelected: true,
+              },
+              {
+                id: "US-PA",
+                showAsSelected: true,
+              },
+              {
+                id: "US-RI",
+                showAsSelected: true,
+              },
+              {
+                id: "US-SC",
+                showAsSelected: true,
+              },
+              {
+                id: "US-UT",
+                showAsSelected: true,
+              },
+              {
+                id: "US-VA",
+                showAsSelected: true,
+              },
+              {
+                id: "US-VT",
+                showAsSelected: true,
+              },
+              {
+                id: "US-WV",
+                showAsSelected: true,
+              },
+            ],
+          },
+          areasSettings: {
+            autoZoom: false,
+            color: "#A8C7C7",
+            colorSolid: "#DCBC7F",
+            selectedColor: "#DCBC7F",
+            outlineColor: "#000000",
+            rollOverColor: "#EDDDBF",
+            rollOverOutlineColor: "#000000",
+          },
+        });
+      </script>
+    </main>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/templatemo-script.js"></script>
+  <script src="https://kit.fontawesome.com/84e0d4d36e.js" crossorigin="anonymous"></script>
+  <script>
+    function showDiv(id) {
+      var all = document.getElementsByClassName("eg-page");
+      var active = document.getElementById(id);
+      var i;
+      for (i = 0; i < all.length; i++) {
+        all[i].style.display = "none";
       }
+      active.style.display = "block";
+    }
 
-      function showSelected(id) {
-        var all = document.getElementsByClassName("eg-menu-option");
-        var active = document.getElementById(id);
-        for (i = 0; i < all.length; i++) {
-          all[i].classList.remove("active");
-        }
-        active.classList.add("active");
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+    function showSelected(id) {
+      var all = document.getElementsByClassName("eg-menu-option");
+      var active = document.getElementById(id);
+      for (i = 0; i < all.length; i++) {
+        all[i].classList.remove("active");
       }
-    </script>
-  </body>
+      active.classList.add("active");
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
 </html>
