@@ -35,27 +35,36 @@
       <nav class="tm-nav" id="tm-nav">
         <ul>
           <li id="id-menu-home" class="eg-menu-option tm-nav-item active">
-            <a onclick="showDiv('id-home'); showSelected('id-menu-home');" class="tm-nav-link">
+            <a tabindex="0" onkeypress="if(event.key === 'Enter') { showDiv('id-home'); showSelected('id-menu-home'); }"
+              onclick="showDiv('id-home'); showSelected('id-menu-home');" class="tm-nav-link">
               <i class="fas fa-home"></i>Main Page
             </a>
           </li>
           <li id="id-menu-index" class="eg-menu-option tm-nav-item">
-            <a onclick="showDiv('id-aboutme'); showSelected('id-menu-index');" class="tm-nav-link">
+            <a tabindex="0"
+              onkeypress="if(event.key === 'Enter') { showDiv('id-aboutme'); showSelected('id-menu-index'); }"
+              onclick="showDiv('id-aboutme'); showSelected('id-menu-index');" class="tm-nav-link">
               <i class="fas fa-user"></i>About Me
             </a>
           </li>
           <li id="id-menu-post" class="eg-menu-option tm-nav-item">
-            <a onclick="showDiv('id-softwareprojects'); showSelected('id-menu-post');" class="tm-nav-link">
+            <a tabindex="0"
+              onkeypress="if(event.key === 'Enter') { showDiv('id-softwareprojects'); showSelected('id-menu-post'); }"
+              onclick="showDiv('id-softwareprojects'); showSelected('id-menu-post');" class="tm-nav-link">
               <i class="fas fa-code"></i>Software Projects
             </a>
           </li>
           <li id="id-menu-about" class="eg-menu-option tm-nav-item">
-            <a onclick="showDiv('id-experience'); showSelected('id-menu-about');" class="tm-nav-link">
+            <a tabindex="0"
+              onkeypress="if(event.key === 'Enter') { showDiv('id-experience'); showSelected('id-menu-about'); }"
+              onclick="showDiv('id-experience'); showSelected('id-menu-about');" class="tm-nav-link">
               <i class="fas fa-briefcase"></i>Experience
             </a>
           </li>
           <li id="id-menu-hobbies" class="eg-menu-option tm-nav-item">
-            <a onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');" class="tm-nav-link">
+            <a tabindex="0"
+              onkeypress="if(event.key === 'Enter') { showDiv('id-hobbies'); showSelected('id-menu-hobbies'); }"
+              onclick="showDiv('id-hobbies'); showSelected('id-menu-hobbies');" class="tm-nav-link">
               <i class="fa-solid fa-person-skiing"></i>Hobbies
             </a>
           </li>
